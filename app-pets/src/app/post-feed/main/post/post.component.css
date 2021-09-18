@@ -1,0 +1,41 @@
+.img-post {
+  max-width: 100%;
+  display: block;
+}
+
+.post {
+  background: #fff;
+  margin: 15px 10px;
+  border-radius: 10px;
+  padding: 5px 0px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.profile span {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.descricao {
+  padding: 0 5px;
+}
+
+.descricao h2 {
+  margin-top: 10px;
+}
+
+.descricao span {
+  font-style: italic;
+}
+
+.descricao p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #949c9b;
+}

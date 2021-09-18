@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+h2,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  scrollbar-width: 0px;
+}

@@ -1,0 +1,9 @@
+.authentication {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}

@@ -1,0 +1,25 @@
+<div class="logo-titulo">
+  <img src="assets/img/logo.png" alt="logo-pet-help">
+  <h2 class="titulo">Criar minha conta</h2>
+</div>
+
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+  <div class="txt_field">
+    <input type="text" name="email" id="email" [(ngModel)]="account.username" required />
+    <span></span>
+    <label class="form__label">Username</label>
+  </div>
+
+  <div class="txt_field">
+    <input type="email" name="email" id="email" [(ngModel)]="account.email" required />
+    <span></span>
+    <label class="form__label">E-mail</label>
+  </div>
+
+  <div class="txt_field">
+    <input type="password" name="password" id="password" [(ngModel)]="account.password" required />
+    <span></span>
+    <label class="form__label">Password</label>
+  </div>
+  <button type="submit" class="form__button" [disabled]="form.form.invalid">Criar minha conta</button>
+</form>
