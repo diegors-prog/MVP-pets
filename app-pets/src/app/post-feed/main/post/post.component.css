@@ -17,6 +17,10 @@
   padding: 5px 0;
 }
 
+.profile img {
+  margin-left: 5px;
+}
+
 .profile span {
   margin-left: 5px;
   font-weight: bold;

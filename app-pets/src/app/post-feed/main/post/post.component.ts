@@ -9,13 +9,13 @@ import { PostService } from './shared/post.service';
 })
 export class PostComponent implements OnInit {
 
-  imgProfile: Totem[] = [
-    new Totem("assets/img/otavio.png"),
-    new Totem("assets/img/arthur.png"),
-    new Totem("assets/img/gean.png"),
-    new Totem("assets/img/euEmBilbao.png"),
-    new Totem("assets/img/mariana.png"),
-    new Totem("assets/img/manuel.png"),
+  imgProfile: string[] = [
+    "assets/img/otavio.png",
+    "assets/img/arthur.png",
+    "assets/img/gean.png",
+    "assets/img/euEmBilbao.png",
+    "assets/img/mariana.png",
+    "assets/img/manuel.png"
   ];
 
   listPosts: Post[] = [];
@@ -25,12 +25,11 @@ export class PostComponent implements OnInit {
   async ngOnInit() {
     this.listPosts = await this.postService.getPosts();
     console.log(this.listPosts);
-  }
-}
 
-class Totem {
-  constructor(public srcProfile: string) {
-    this.srcProfile = srcProfile;
+    for (let i = 0; i < this.imgProfile.length; i++) {
+      let src: string = this.imgProfile[i];
+      this.listPosts[i].src_profile = src;
+    }
   }
 }
 

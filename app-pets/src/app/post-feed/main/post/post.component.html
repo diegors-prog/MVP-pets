@@ -1,6 +1,6 @@
 <div *ngFor="let post of listPosts" class="post">
   <div class="profile">
-    <img *ngFor="let perfil of imgProfile" src="{{perfil.srcProfile}}" alt="icon profile">
+    <img src="{{post.src_profile}}" alt="icon profile">
     <span>{{post.author}}</span>
   </div>
   <img class="img-post" src="{{post.src}}" alt="imagem post">
