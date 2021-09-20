@@ -14,7 +14,7 @@ export class AuthInterceptor implements HttpInterceptor {
     const token = this.accountService.getAuthorizationToken();
     let request: HttpRequest<any> = req;
 
-    if (token) {
+    if (token && !this.accountService.isTokenExpired(token)) {
       // O request é imutável, ou seja, não é possivel mudar nada
       // Faço o clone para conseguir mudar as propriedades
       // Passo o token de autenticação no header
