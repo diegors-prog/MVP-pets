@@ -13,6 +13,8 @@ export class LoginComponent implements OnInit {
     password: ''
   };
 
+  loading: boolean = null;
+
   constructor(private accountService: AccountService,
     private router: Router) { }
 
@@ -21,11 +23,13 @@ export class LoginComponent implements OnInit {
 
   async onSubmit() {
     try {
+      this.loading = true;
       const result = await this.accountService.login(this.login);
       console.log(`Login efetuado: ${result}`);
 
       // navego para a rota vazia novamente
       this.router.navigate(['']);
+      this.loading = false;
     } catch (error) {
       console.log(error);
     }

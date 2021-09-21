@@ -31,7 +31,8 @@
 }
 
 .descricao h2 {
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 30px;
 }
 
 .descricao span {
@@ -42,4 +43,25 @@
   font-size: 14px;
   margin-top: 5px;
   color: #949c9b;
+}
+
+.like-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icones {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.comments {
+  margin-left: 20px;
+}
+
+.icones img {
+  padding: 7px 12px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.35);
 }

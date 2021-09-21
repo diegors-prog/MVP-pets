@@ -19,6 +19,12 @@
 
   <div class="pass">Esqueceu sua senha?</div>
 
+  <div class="loading" *ngIf="loading">
+    <div>
+      <app-app-loading></app-app-loading>
+    </div>
+  </div>
+
   <button type="submit" class="form__button" [disabled]="form.form.invalid">Entrar</button>
   <div class="signup_link">
     Não é membro? <a [routerLink]="['/create-account']">Criar conta</a>

@@ -23,7 +23,7 @@ export class CreateAccountComponent implements OnInit {
       const result = await this.accountService.createAccount(this.account);
 
       // exibir uma mensagem amigável aqui
-      console.log(result);
+      console.log("Usuário com id " + result + " foi cadastrado com sucesso!");
     } catch (error) {
       console.log(error);
     }

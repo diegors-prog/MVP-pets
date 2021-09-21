@@ -16,6 +16,8 @@ import { AuthenticationComponent } from './layout/authentication/authentication.
 import { AppRoutingModule } from './/app-routing.module';
 import { FeedComponent } from './post-feed/feed/feed.component';
 import { httpInterceptorProviders } from './http-interceptors';
+import { AppLoadingComponent } from './app-loading/app-loading.component';
+import { AppLoadingModule } from './app-loading/app-loading.module';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,15 @@ import { httpInterceptorProviders } from './http-interceptors';
     CreateAccountComponent,
     HomeComponent,
     AuthenticationComponent,
-    FeedComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppLoadingModule
   ],
   providers: [
     httpInterceptorProviders
